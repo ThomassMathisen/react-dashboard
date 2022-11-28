@@ -14,7 +14,7 @@ export default function User() {
     <div className="user">
       <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
-        <Link t0="/newUser">
+        <Link to="/newUser">
           <button className="userAddButton">Create</button>
         </Link>
       </div>
@@ -31,7 +31,7 @@ export default function User() {
               <span className="userShowUserTitle">Software Engineer</span>
             </div>
           </div>
-          <div className="userShowBotton">
+          <div className="userShowBottom">
             <span className="userShowTitle">Account Details</span>
             <div className="userShowInfo">
               <PermIdentity className="userShowIcon" />
