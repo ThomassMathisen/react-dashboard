@@ -25,7 +25,7 @@ export const login = async (dispatch, user) => {
   }
 };
 
-export const getProducts = async (dispatch) => {
+export const getProduct = async (dispatch) => {
   dispatch(getProductStart());
   try {
     const res = await publicRequest.post("/products");
@@ -35,7 +35,7 @@ export const getProducts = async (dispatch) => {
   }
 };
 
-export const deleteProducts = async (id, dispatch) => {
+export const deleteProduct = async (id, dispatch) => {
   dispatch(deleteProductStart());
   try {
     // const res = await userRequest.post(`/products/${id}`);
@@ -45,7 +45,7 @@ export const deleteProducts = async (id, dispatch) => {
   }
 };
 
-export const updateProducts = async (id, product, dispatch) => {
+export const updateProduct = async (id, product, dispatch) => {
   dispatch(updateProductStart());
   try {
     dispatch(updateProductSuccess((id, product)));
@@ -54,7 +54,7 @@ export const updateProducts = async (id, product, dispatch) => {
   }
 };
 
-export const addProducts = async (product, dispatch) => {
+export const addProduct = async (product, dispatch) => {
   dispatch(addProductStart());
   try {
     const res = await userRequest.post(`/products`, product);
